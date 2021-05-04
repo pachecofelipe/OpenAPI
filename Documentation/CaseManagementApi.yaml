@@ -88,6 +88,183 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Case'
+              examples:
+                list of cases:
+                  value:
+                  - identifier: A91A69AD-DE28-429B-B187-2B5AD8E083EE
+                    driver:
+                      name: Felipe Rodrigues
+                      identifier: B21A69AD-DE28-429B-B187-2B5AD8E083DD
+                      dateOfBirth: 2018-01-17
+                      maritalStatus: married
+                      job:
+                        title: Software Engineer
+                        startDate: 2019-03-24
+                        companyName: Microsoft
+                        companyAddress1: "South County Business Park, One Microsoft\
+                          \ Place"
+                        companyAddress2: Carmanhall and Leopardstown
+                        companyCity: Dublin
+                        companyEircode: D18 P521
+                        companyGeoLocation: "53.2695466463407, -6.196220861370553"
+                      mobileNumber: +353892077323
+                      socialMedias:
+                      - socialMedia: Instagram
+                        url: https://www.instagram.com/felipepachecor/
+                        activities:
+                        - type: comment
+                          content: some text
+                          date: 2018-02-10T09:30Z
+                          url: https://www.instagram.com/felipepachecor/commentIdentfier
+                        - type: checkin
+                          content: "53.2734,-7.77832031"
+                          date: 2018-02-10T09:30Z
+                      - socialMedia: Facebook
+                        url: https://www.facebook.com/pachecorodriguesfelipe
+                        activities:
+                        - type: comment
+                          content: some text
+                          date: 2018-02-10T09:30Z
+                          url: https://www.facebook.com/pachecorodriguesfelipe/someactivityurl
+                      trips:
+                      - startDate: 2018-02-10T09:30Z
+                        endDate: 2018-02-10T09:30Z
+                        distance: 6.07
+                        numberOfOverSpeeding: 1
+                        numberOfAcceleration: 2
+                        numberOfDeceleration: 0
+                        numberOfMobileUsage: 3
+                        riskScore: 2
+                        identifier: 10E31288-5DD3-435B-A8F3-345C94354DBD
+                        route:
+                          type: FeatureCollection
+                          features:
+                          - type: Feature
+                            properties: {}
+                            geometry:
+                              type: LineString
+                              coordinates:
+                              - - -44.91339683532715
+                                - -20.145158581773966
+                              - - -44.92348194122314
+                                - -20.1452794514767
+                        mobile: +353892077323
+                      - startDate: 2018-02-10T09:30Z
+                        endDate: 2018-02-10T09:30Z
+                        distance: 5.73
+                        numberOfOverSpeeding: 4
+                        numberOfAcceleration: 3
+                        numberOfDeceleration: 2
+                        numberOfMobileUsage: 3
+                        riskScore: 5
+                        identifier: FBDD7C52-0CB2-4674-8AA2-ADFD5AD8B4E4
+                        route:
+                          type: FeatureCollection
+                          features:
+                          - type: Feature
+                            properties: {}
+                            geometry:
+                              type: LineString
+                              coordinates:
+                              - - -44.90743160247803
+                                - -20.16574537177958
+                              - - -44.89957809448242
+                                - -20.144272201095905
+                        mobile: +353892077323
+                      licence:
+                        type: LearnerPermit
+                        issueDate: 2018-01-17
+                        class: B
+                        number: ASD123FGH
+                        totalPenalties: 0
+                      employmentType: FullTime
+                      cars:
+                      - maker: Audi
+                        model: A4
+                        year: 2017
+                        registration: 172L1234
+                        value: 15000
+                    comment: "Possible driver that holds learner permit driving in\
+                      \ motorways, e.g. trip identfier: XXX"
+                    createDate: 2021-02-10T09:30Z
+                    type: learnerInMotorway
+                    probabilityScore: 0.45
+                  - identifier: B61A69AD-DE28-429B-B187-2B5AD8E083AA
+                    driver:
+                      name: Steve Jobs
+                      identifier: C61A69AD-DE28-429B-B187-2B5AD8E083ZZ
+                      dateOfBirth: 1985-12-17
+                      maritalStatus: divorced
+                      job:
+                        title: Software Engineer
+                        startDate: 2018-01-17
+                        companyName: Apple
+                        companyAddress1: 1 Apple Place
+                        companyCity: Apple City
+                      mobileNumber: +35387547658
+                      socialMedias:
+                      - socialMedia: Linkedin
+                        url: some text
+                        activities:
+                        - type: post
+                          content: some text
+                          date: 2021-02-10T09:30Z
+                          url: some text
+                        - type: comment
+                          content: some text
+                          date: 2018-02-10T09:30Z
+                          url: some text
+                      - socialMedia: Instagram
+                        url: some text
+                        activities:
+                        - type: checkin
+                          content: some text
+                          date: 2021-02-10T09:30Z
+                          url: some text
+                        - type: post
+                          content: some text
+                          date: 2021-02-10T09:30Z
+                          url: some text
+                      trips:
+                      - startDate: 2021-02-10T09:30Z
+                        endDate: 2021-02-10T09:30Z
+                        distance: 10
+                        numberOfOverSpeeding: 0
+                        numberOfAcceleration: 0
+                        numberOfDeceleration: 0
+                        numberOfMobileUsage: 0
+                        riskScore: 1
+                        identifier: 997AA36D-5F92-411F-9B58-51260FDAC8BA
+                        route: some text
+                        mobile: some text
+                      - startDate: 2021-02-10T09:30Z
+                        endDate: 2021-02-10T09:30Z
+                        distance: 34
+                        numberOfOverSpeeding: 1
+                        numberOfAcceleration: 2
+                        numberOfDeceleration: 1
+                        numberOfMobileUsage: 2
+                        riskScore: 2
+                        identifier: some text
+                        route: some text
+                        mobile: some text
+                      licence:
+                        type: FullPermit
+                        issueDate: 2018-01-17
+                        class: B
+                        number: some text
+                        totalPenalties: 1
+                      employmentType: Employed
+                      cars:
+                      - maker: Fiat
+                        model: Punto
+                        year: 2014
+                        registration: 142D456
+                        value: 64.1
+                    comment: some text
+                    createDate: 2018-02-10T09:30Z
+                    type: learnerInMotorway
+                    probabilityScore: 0.94
           description: Success operation
         "500":
           description: "Error trying to retrieve data from server, try again later"
@@ -200,6 +377,7 @@ paths:
                   comment: Possible driver that holds learner permit driving in motorways
                   createDate: 2021-02-10T09:30Z
                   type: learnerInMotorway
+                  probabilityScore: 0.65
         required: true
       responses:
         "201":
@@ -329,6 +507,7 @@ paths:
                       motorways
                     createDate: 2021-02-10T09:30Z
                     type: learnerInMotorway
+                    probabilityScore: 0.34
           description: Success operation
       summary: Get case
       description: Get single case
@@ -437,6 +616,7 @@ paths:
                   comment: Possible driver that holds learner permit driving in motorways
                   createDate: 2021-02-10T09:30Z
                   type: learnerInMotorway
+                  probabilityScore: 0.12
         required: true
       parameters:
       - examples:
@@ -698,6 +878,8 @@ components:
       - comment
       - driver
       - type
+      - createDate
+      - probabilityScore
       type: object
       properties:
         identifier:
@@ -720,6 +902,11 @@ components:
           - learnerInMotorway
           - personalDetails
           type: string
+        probabilityScore:
+          format: float
+          description: "The suspected strength of case veracity. The score is measured\
+            \ between 0 and 1, whereas 0 is low confidence and 1 is high confidence"
+          type: number
       example:
         identifier: A91A69AD-DE28-429B-B187-2B5AD8E083EE
         driver:
@@ -817,6 +1004,7 @@ components:
           \ e.g. trip identfier: XXX"
         createDate: 2021-02-10T09:30Z
         type: learnerInMotorway
+        probabilityScore: 0.45
     SocialMedia:
       title: Root Type for SocialMedia
       description: Social Media Details
